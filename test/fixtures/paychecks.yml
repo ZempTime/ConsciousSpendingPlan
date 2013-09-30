@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  total_amount: 1.5
+  received_at: 2013-09-30 15:39:10
+
+two:
+  total_amount: 1.5
+  received_at: 2013-09-30 15:39:10

@@ -1,0 +1,21 @@
+<%= form_for @paycheck do |f| %>
+  <% if @paycheck.errors.any? %>
+    <% @paycheck.errors.full_messages.each do |msg| %>
+      <%= msg %>
+    <% end %>
+  <% end %>
+
+  <div>
+    <%= f.label :total_amount %>
+    <%= f.text_field :total_amount, placeholder: "$XXX" %>
+  </div>
+
+  <div>
+    <%= f.label :received_at %>
+    <%= f.date_field :received_at %>
+  </div>
+
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>

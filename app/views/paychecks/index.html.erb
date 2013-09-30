@@ -1,0 +1,9 @@
+<h1>All Paychecks</h1>
+
+<% @paychecks.each do |paycheck| %>
+  <div>
+    <%= link_to number_to_currency(paycheck.total_amount), paycheck %>
+  </div>
+<% end %>
+
+<%= link_to "New Paycheck", new_paycheck_path %>

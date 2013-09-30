@@ -1,0 +1,9 @@
+<h1><%= number_to_currency @paycheck.total_amount %></h1>
+
+<% @paycheck.disbursments.each do |disbursment| %>
+  <div>
+    <%= disbursment.account.name %> - <%= number_to_currency disbursment.amount %>
+  </div>
+<% end %>
+
+<%= link_to "Back", paychecks_path %>
